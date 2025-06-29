@@ -2,6 +2,11 @@
 
 
 #include "MyActorTestAPI.h"
+#include "tinyxml2.h"
+#include <iostream>
+
+
+using namespace tinyxml2;
 
 // Sets default values
 AMyActorTestAPI::AMyActorTestAPI()
@@ -79,6 +84,16 @@ void AMyActorTestAPI::BeginPlay()
 	mj_deleteModel(model);
 	// mj_deactivate();
 
+
+
+
+
+
+	////
+	///
+	///
+	///
+	TestXML2();
 	
 }
 
@@ -87,5 +102,39 @@ void AMyActorTestAPI::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AMyActorTestAPI::TestXML2()
+{
+	// Create document
+	XMLDocument doc;
+	XMLElement* root = doc.NewElement("hello");
+	root->SetText("world");
+	doc.InsertFirstChild(root);
+	doc.SaveFile("test.xml");
+
+	// Load document
+	XMLDocument loaded;
+	loaded.LoadFile("test.xml");
+	XMLElement* loadedRoot = loaded.FirstChildElement("hello");
+	if (loadedRoot) {
+		std::cout << "Loaded: " << loadedRoot->GetText() << std::endl;
+	}
+
+	GEngine->AddOnScreenDebugMessage(
+		-1,                 // Key (-1 = auto)
+		5.0f,               // Display time in seconds
+		FColor::Green,      // Text color
+		//TEXT("Hello from C++ in Unreal! %.5f") +// Message
+		FString(loadedRoot->GetText()) // 6 = precision
+	);
+
+	GEngine->AddOnScreenDebugMessage(
+	-1,                 // Key (-1 = auto)
+	5.0f,               // Display time in seconds
+	FColor::Green,      // Text color
+	//TEXT("Hello from C++ in Unreal! %.5f") +// Message
+	"xml2 test" // 6 = precision
+);
 }
 

@@ -13,13 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c381f551-82a5-459b-8c95-f1ad55f61cc0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MujucoProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MujucoProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Content/BP/Actors/test/BP_myactortestapi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Content/BP/Actors/test/BP_myactortestapi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjScene.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/MujocoGIsubsystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/MujocoGIsubsystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjScene.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjScene.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/MujocoGIsubsystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/MujocoGIsubsystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/MyActorTestAPI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/MyActorTestAPI.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/MyActorTestAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/MyActorTestAPI.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -500,7 +495,7 @@
       <updated>1751196424545</updated>
       <workItem from="1751196426978" duration="2000" />
       <workItem from="1751196486000" duration="1853000" />
-      <workItem from="1751202388407" duration="15556000" />
+      <workItem from="1751202388407" duration="18551000" />
     </task>
     <servers />
   </component>
