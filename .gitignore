@@ -48,6 +48,13 @@ SourceArt/**/*.tga
 # Binary Files
 Binaries/*
 Plugins/**/Binaries/*
+# But do NOT ignore this folder path  =keep mujoco libraries, lib and dll files
+!Plugins/MujocoUE/Binaries/
+!Plugins/MujocoUE/Binaries/ThirdParty/
+!Plugins/MujocoUE/Binaries/ThirdParty/MujocoLibrary/
+!Plugins/MujocoUE/Binaries/ThirdParty/MujocoLibrary/Win64/
+!Plugins/MujocoUE/Binaries/ThirdParty/MujocoLibrary/Win64/mujoco.dll
+!Plugins/MujocoUE/Source/ThirdParty/MujocoLibrary/lib/mujoco.lib
 
 # Builds
 Build/*
