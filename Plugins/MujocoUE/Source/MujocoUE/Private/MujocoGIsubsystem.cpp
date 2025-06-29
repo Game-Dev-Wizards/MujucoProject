@@ -15,7 +15,7 @@ void UMujocoGIsubsystem::Deinitialize()
 	Super::Deinitialize();
 }
 
-UMjScene* UMujocoGIsubsystem::GetCurrentScene() 
+UMjScene* UMujocoGIsubsystem::GetCurrentMjScene() 
 {
 	if(MjSceneInstance)
 	{

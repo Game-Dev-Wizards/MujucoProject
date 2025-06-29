@@ -21,7 +21,7 @@ public:
 	virtual void Deinitialize() override;
 	
 	UFUNCTION(BlueprintCallable)
-	UMjScene* GetCurrentScene() ;
+	UMjScene* GetCurrentMjScene() ;
 
 	UFUNCTION(BlueprintCallable)
 	UMjGlobalSettings* GetCurrentMjGlobalSettings() ;

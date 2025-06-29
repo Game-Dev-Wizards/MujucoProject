@@ -20,6 +20,8 @@ void UMjScene::BeginPlay()
 {
 	Super::BeginPlay();
 
+	SceneRecreationAtLateUpdateRequested = false;
+
 	// ...
 	
 }

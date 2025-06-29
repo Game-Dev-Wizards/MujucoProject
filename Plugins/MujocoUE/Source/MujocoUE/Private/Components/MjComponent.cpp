@@ -3,6 +3,9 @@
 
 #include "Components/MjComponent.h"
 
+#include "MujocoGIsubsystem.h"
+#include "Kismet/GameplayStatics.h"
+
 
 // Sets default values for this component's properties
 UMjComponent::UMjComponent()
@@ -14,11 +17,38 @@ UMjComponent::UMjComponent()
 	// ...
 }
 
+FString UMjComponent::GetMujocoName() const
+{
+	return MujocoName;
+}
+
+int UMjComponent::GetMujocoID() const
+{
+	return  MujocoID;
+}
+
+mjtObj* UMjComponent::GetObjectType() const
+{
+	return ObjectType;
+}
+
+bool _sceneExcludesMe = false;
 
 // Called when the game starts
 void UMjComponent::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	UGameInstance* GameInstance = Cast<UGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	UMujocoGIsubsystem* refSubSystem = GameInstance->GetSubsystem<UMujocoGIsubsystem>();
+	if (refSubSystem->GetCurrentMjScene() == nullptr) {
+		
+		UE_LOG(LogTemp, Error, TEXT("MuJoCo Scene not found"));
+
+	}
+	if (refSubSystem->GetCurrentMjScene()->Model != nullptr) {
+		_sceneExcludesMe = true;
+	}
 
 	// ...
 	
