@@ -1,5 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
+using System.IO;
 using UnrealBuildTool;
 
 public class MujocoUE : ModuleRules
@@ -26,6 +27,8 @@ public class MujocoUE : ModuleRules
 			new string[]
 			{
 				"Core",
+                "Projects",
+                "MujocoLibrary",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -50,4 +53,10 @@ public class MujocoUE : ModuleRules
 			}
 			);
 	}
+
+    /// Helper to give us ProjectRoot/ThirdParty
+    private string ThirdPartyPath
+    {
+        get { return Path.GetFullPath(Path.Combine(ModuleDirectory, "../../ThirdParty/")); }
+    }
 }
