@@ -12,39 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c381f551-82a5-459b-8c95-f1ad55f61cc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Bodies/MjBaseBody.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Bodies/MjBody.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Bodies/MjMocapBody.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjActuator.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjExclude.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjGlobalSettings.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjInertial.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/MjScene.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/MjGeom.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/MjShapeComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Bodies/MjBaseBody.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Bodies/MjBody.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Bodies/MjMocapBody.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjActuator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjComponent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjExclude.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjGlobalSettings.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjInertial.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjScene.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/MjGeom.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/MjShapeComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/IMjShape.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/MjBoxShape.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/MjCapsuleShape.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/MjSite.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/MjSphereShape.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/MujocoGIsubsystem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/IMjShape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/MjBoxShape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/MjCapsuleShape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/MjSite.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/MjSphereShape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/MujocoGIsubsystem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MujucoProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MujucoProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Content/BP/Actors/test/BP_myactortestapi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Content/BP/Actors/test/BP_myactortestapi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enc_temp_folder/30fec81a1e2588f5a34e9f2ec280bba8/MyActorTestAPI.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/MjComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Private/Components/Shapes/IMjShape.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/MujocoUE/Source/MujocoUE/Public/Components/Shapes/IMjShape.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/UE/e/UE_5.6/Engine/Source/Developer/SkeletalMeshUtilitiesCommon/Public/LODUtilities.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/UE/e/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Interface.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/UE/e/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -506,7 +505,7 @@
       <updated>1751196424545</updated>
       <workItem from="1751196426978" duration="2000" />
       <workItem from="1751196486000" duration="1853000" />
-      <workItem from="1751202388407" duration="1999000" />
+      <workItem from="1751202388407" duration="10562000" />
     </task>
     <servers />
   </component>

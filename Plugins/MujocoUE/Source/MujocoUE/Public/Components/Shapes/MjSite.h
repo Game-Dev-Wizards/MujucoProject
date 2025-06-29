@@ -3,18 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "MjComponent.generated.h"
+#include "MjShapeComponent.h"
+#include "MjSite.generated.h"
 
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
-class MUJOCOUE_API UMjComponent : public USceneComponent
+class MUJOCOUE_API UMjSite : public UMjShapeComponent
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this component's properties
-	UMjComponent();
+	UMjSite();
 
 protected:
 	// Called when the game starts
