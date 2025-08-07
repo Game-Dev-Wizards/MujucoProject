@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "mujoco/mujoco.h"
+#include "tinyxml2.h"
 #include "Components/ActorComponent.h"
 #include "MjComponent.generated.h"
 
@@ -19,23 +20,42 @@ public:
 
 	FString GetMujocoName() const; // Public getter
 	int GetMujocoID() const; // Public getter
-	mjtObj* GetObjectType()const;	
+	mjtObj* GetObjectType()const;
+	virtual  void OnSyncState(mjData* data);
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 	mjtObj* ObjectType;
 	virtual bool IsSuppressNameAttribute() const { return false; }
+	virtual void ParseMjcf(tinyxml2::XMLElement* mjcf);
+	virtual tinyxml2::XMLElement* OnGenerateMjcf(tinyxml2::XMLDocument* doc);
+	virtual void OnBindToRuntime(mjModel* model, mjData* data) ;
+
+	virtual void OnEnable() ;
+
+	virtual void Update();
+
+
 
 public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
 
+	void BindToRuntime(mjModel* model, mjData* data);
+
+	tinyxml2::XMLElement* GenerateMjcf(FString name, tinyxml2::XMLDocument* doc);
+	void OnApplicationQuit();
+	void OnDisable();
+
+
 
 private:
 	FString MujocoName; // Private variable
 	int MujocoID; // Private variable
-	
+	bool _sceneExcludesMe = false;
+	bool _exiting = false;
+
 
 };
